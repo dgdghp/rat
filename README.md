@@ -1,2 +1,4 @@
 # rat.html
-the renowned horizontally spinning rat ported to javascript 
+based off of the amazing bash script: https://github.com/Mcharlsto/rat
+
+
