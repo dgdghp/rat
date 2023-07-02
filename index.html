@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <section>
     <!-- ugliest html known to man incoming -->
 
     <div class="f1">
@@ -761,7 +762,42 @@
                                                             ...:::::::-===:                                                                       
                                                                       ......               ...                                                    
     </div>
-
+  </section>
     
+  <section>
+    <audio autoplay loop>
+      <source src="/assets/audio.opus">
+    </audio>
+  </section>
+
+  <section class="status">
+    <a href="https://github.com/dgdghp/rat.html">
+      <h3>you have been blessed with </h3>
+      <b><h3 class="counter-display">0</h3></b>
+      <h3> spins of the rat</h3>
+    </a>
+    
+  </section>
+
+  <script>
+
+    window.onload = function start() {
+      counter();
+    }
+
+    let count = 0;
+
+    function counter() {
+      let counterDisplayElem = document.querySelector('.counter-display');
+
+      window.setInterval(function () {
+        count++
+        counterDisplayElem.innerHTML = count;
+      }, 4000);
+    }
+    
+
+
+  </script>    
 </body>
 </html>

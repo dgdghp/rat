@@ -1,6 +1,11 @@
 html {
+    overflow: hidden;
+    height: 100%;
     background-color: rgb(25, 25, 25);
+    font-size: 1vw;
     color: white;
+
+    font-family: IntelOneMono;
 }
 
 
@@ -10,10 +15,32 @@ html {
 }
 
 div {
-    font-family: IntelOneMono;
     position: fixed;
     display: inline;
     white-space: pre-wrap;
+    text-align: center;
+    width: 100%;
+    top: 45px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 1.8vw;
+  display: inline;
+}
+
+.status {
+  width: 100%;
+  text-align: center;
+  
 }
 
 /* ugliest css known to humankind */
