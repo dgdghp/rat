@@ -1,25 +1,31 @@
+@font-face {
+  font-family: IntelOneMono;
+  src: url("./assets/i1ml.woff2");
+  font-weight: normal;
+}
+
+@font-face {
+font-family: IntelOneMonoBold;
+src: url("./assets/i1mb.woff2");
+font-weight: bold;
+}
+
 html {
     overflow: hidden;
     height: 100%;
     background-color: rgb(25, 25, 25);
-    font-size: 1vw;
+    font-size: 0.8vw;
     color: white;
-
-    font-family: IntelOneMono;
+    font-family: IntelOneMonoBold;
 }
 
-
-@font-face {
-    font-family: IntelOneMono;
-    src: url("./assets/i1m.woff2");
-}
 
 div {
     position: fixed;
     display: inline;
     white-space: pre-wrap;
     text-align: center;
-    width: 100%;
+    width: 80%;
     top: 45px;
 }
 
@@ -32,6 +38,7 @@ a:hover {
   text-decoration: underline;
 }
 
+
 h3 {
   font-size: 1.8vw;
   display: inline;
@@ -42,6 +49,71 @@ h3 {
   text-align: center;
   
 }
+
+.rat {
+  animation: rainbow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.counter-display {
+  font-family: IntelOneMonoBold;
+}
+
+@media (max-width: 700) {
+  h3 {
+    color: red;
+    font-size: 3vw;
+  }
+
+  div {
+    width: 100%;
+  }
+
+  html {
+    background-color: blue;
+  }
+}
+
+@keyframes rainbow{
+  100%,0%{
+    color: rgb(255,0,0);
+  }
+  8%{
+    color: rgb(255,127,0);
+  }
+  16%{
+    color: rgb(255,255,0);
+  }
+  25%{
+    color: rgb(127,255,0);
+  }
+  33%{
+    color: rgb(0,255,0);
+  }
+  41%{
+    color: rgb(0,255,127);
+  }
+  50%{
+    color: rgb(0,255,255);
+  }
+  58%{
+    color: rgb(0,127,255);
+  }
+  66%{
+    color: rgb(0,0,255);
+  }
+  75%{
+    color: rgb(127,0,255);
+  }
+  83%{
+    color: rgb(255,0,255);
+  }
+  91%{
+    color: rgb(255,0,127);
+  }
+}
+
 
 /* ugliest css known to humankind */
 
@@ -1260,186 +1332,186 @@ h3 {
 
 .f1 {
     animation-name: f1;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f2 {
     animation-name: f2;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f3 {
     animation-name: f3;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f4 {
     animation-name: f4;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f5 {
     animation-name: f5;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f6 {
     animation-name: f6;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f7 {
     animation-name: f7;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f8 {
     animation-name: f8;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f9 {
     animation-name: f9;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f10 {
     animation-name: f10;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f11 {
     animation-name: f11;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f12 {
     animation-name: f12;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f13 {
     animation-name: f13;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f14 {
     animation-name: f14;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f15 {
     animation-name: f15;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f16 {
     animation-name: f16;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f17 {
     animation-name: f17;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f18 {
     animation-name: f18;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f19 {
     animation-name: f19;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f20 {
     animation-name: f20;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f21 {
     animation-name: f21;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f22 {
     animation-name: f22;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f23 {
     animation-name: f23;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f24 {
     animation-name: f24;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f25 {
     animation-name: f25;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f26 {
     animation-name: f26;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f27 {
     animation-name: f27;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f28 {
     animation-name: f28;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f29 {
     animation-name: f29;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f30 {
     animation-name: f30;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
 .f31 {
     animation-name: f31;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
