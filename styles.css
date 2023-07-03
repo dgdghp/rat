@@ -60,7 +60,7 @@ h3 {
   font-family: IntelOneMonoBold;
 }
 
-@media (max-width: 700) {
+/* @media (max-width: 700) {
   h3 {
     color: red;
     font-size: 3vw;
@@ -73,7 +73,7 @@ h3 {
   html {
     background-color: blue;
   }
-}
+} */
 
 @keyframes rainbow{
   100%,0%{
