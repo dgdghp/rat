@@ -763,12 +763,6 @@
                                                                       ......               ...                                                    
     </div>
   </section>
-    
-  <section>
-    <audio autoplay loop>
-      <source src="/assets/audio.opus">
-    </audio>
-  </section>
 
   <section class="status">
     <a href="https://github.com/dgdghp/rat.html">
@@ -780,7 +774,7 @@
   </section>
 
   <script>
-
+    // handle counter
     window.onload = function start() {
       counter();
     }
@@ -795,7 +789,34 @@
         counterDisplayElem.innerHTML = count;
       }, 4000);
     }
+
+    // handle gapless audio playback
     
+    var current_player = "a";
+    var player_a = document.createElement("audio");
+    var player_b = document.createElement("audio");
+
+    player_a.src = "./assets/audio.ogg";
+    player_b.src = player_a.src;
+
+    function loopIt(){
+        var player = null;
+
+        if(current_player == "a"){
+            player = player_b;
+            current_player = "b";
+        }
+        else{
+            player = player_a;
+            current_player = "a";
+        }
+
+        player.play();
+
+        setTimeout(loopIt, 6570); //5333 is the length of the audio clip in milliseconds.
+    }
+
+    loopIt();
 
 
   </script>    

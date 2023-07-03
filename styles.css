@@ -11,7 +11,7 @@ html {
 
 @font-face {
     font-family: IntelOneMono;
-    src: url("/assets/i1m.woff2");
+    src: url("./assets/i1m.woff2");
 }
 
 div {
